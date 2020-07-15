@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CwA-qM-XJc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CwA-qM-XJc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -45,7 +45,11 @@
                                             <segue destination="jA0-oZ-fS8" kind="show" id="3NG-Cs-Mnc"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="6bA-25-s5O"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="6bA-25-s5O">
+                                        <connections>
+                                            <segue destination="Qr6-Td-8J5" kind="show" id="cv5-xo-2uE"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="bl4-i4-6qh"/>
                                     <barButtonItem title="👚" width="137" id="FsG-PF-Hg4"/>
                                     <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="rce-kY-4ef"/>
@@ -101,6 +105,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZk-eu-S82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="306" y="956"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="MsB-C0-a9d">
+            <objects>
+                <viewController id="Qr6-Td-8J5" customClass="SearchViewController" customModule="Green_Gleam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hza-fV-DhS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uCp-Q4-L72">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="c7p-ye-TxB"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="GAX-Dw-lhe"/>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="PCk-NQ-iR2"/>
+                                    <barButtonItem title="👚" width="137" id="s2F-VV-1aZ"/>
+                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="CDb-nR-It1"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OX5-0L-E4W">
+                                <rect key="frame" x="180" y="250" width="54" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="DCI-dv-sDL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H5Z-R6-4fb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KG1-aS-XtP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="960"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TiU-A1-nbk">
