@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE58E5D624BFA41600A8E150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5D524BFA41600A8E150 /* AppDelegate.swift */; };
+		FE58E5D824BFA41600A8E150 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5D724BFA41600A8E150 /* SceneDelegate.swift */; };
+		FE58E5DA24BFA41600A8E150 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5D924BFA41600A8E150 /* ViewController.swift */; };
+		FE58E5DD24BFA41600A8E150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE58E5DB24BFA41600A8E150 /* Main.storyboard */; };
+		FE58E5E024BFA41600A8E150 /* Green_Gleam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5DE24BFA41600A8E150 /* Green_Gleam.xcdatamodeld */; };
+		FE58E5E224BFA41800A8E150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE58E5E124BFA41800A8E150 /* Assets.xcassets */; };
+		FE58E5E524BFA41800A8E150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE58E5E324BFA41800A8E150 /* LaunchScreen.storyboard */; };
+		FE58E5F024BFA41800A8E150 /* Green_GleamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5EF24BFA41800A8E150 /* Green_GleamTests.swift */; };
+		FE58E5FB24BFA41800A8E150 /* Green_GleamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5FA24BFA41800A8E150 /* Green_GleamUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE58E5EC24BFA41800A8E150 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE58E5CA24BFA41600A8E150 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE58E5D124BFA41600A8E150;
+			remoteInfo = "Green&Gleam";
+		};
+		FE58E5F724BFA41800A8E150 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE58E5CA24BFA41600A8E150 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE58E5D124BFA41600A8E150;
+			remoteInfo = "Green&Gleam";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE58E5D224BFA41600A8E150 /* Green&Gleam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Green&Gleam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE58E5D524BFA41600A8E150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE58E5D724BFA41600A8E150 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE58E5D924BFA41600A8E150 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE58E5DC24BFA41600A8E150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE58E5DF24BFA41600A8E150 /* Green_Gleam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Green_Gleam.xcdatamodel; sourceTree = "<group>"; };
+		FE58E5E124BFA41800A8E150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE58E5E424BFA41800A8E150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE58E5E624BFA41800A8E150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE58E5EB24BFA41800A8E150 /* Green&GleamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green&GleamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE58E5EF24BFA41800A8E150 /* Green_GleamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_GleamTests.swift; sourceTree = "<group>"; };
+		FE58E5F124BFA41800A8E150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE58E5F624BFA41800A8E150 /* Green&GleamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green&GleamUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE58E5FA24BFA41800A8E150 /* Green_GleamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_GleamUITests.swift; sourceTree = "<group>"; };
+		FE58E5FC24BFA41800A8E150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE58E5CF24BFA41600A8E150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE58E5E824BFA41800A8E150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE58E5F324BFA41800A8E150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE58E5C924BFA41600A8E150 = {
+			isa = PBXGroup;
+			children = (
+				FE58E5D424BFA41600A8E150 /* Green&Gleam */,
+				FE58E5EE24BFA41800A8E150 /* Green&GleamTests */,
+				FE58E5F924BFA41800A8E150 /* Green&GleamUITests */,
+				FE58E5D324BFA41600A8E150 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE58E5D324BFA41600A8E150 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE58E5D224BFA41600A8E150 /* Green&Gleam.app */,
+				FE58E5EB24BFA41800A8E150 /* Green&GleamTests.xctest */,
+				FE58E5F624BFA41800A8E150 /* Green&GleamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE58E5D424BFA41600A8E150 /* Green&Gleam */ = {
+			isa = PBXGroup;
+			children = (
+				FE58E5D524BFA41600A8E150 /* AppDelegate.swift */,
+				FE58E5D724BFA41600A8E150 /* SceneDelegate.swift */,
+				FE58E5D924BFA41600A8E150 /* ViewController.swift */,
+				FE58E5DB24BFA41600A8E150 /* Main.storyboard */,
+				FE58E5E124BFA41800A8E150 /* Assets.xcassets */,
+				FE58E5E324BFA41800A8E150 /* LaunchScreen.storyboard */,
+				FE58E5E624BFA41800A8E150 /* Info.plist */,
+				FE58E5DE24BFA41600A8E150 /* Green_Gleam.xcdatamodeld */,
+			);
+			path = "Green&Gleam";
+			sourceTree = "<group>";
+		};
+		FE58E5EE24BFA41800A8E150 /* Green&GleamTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE58E5EF24BFA41800A8E150 /* Green_GleamTests.swift */,
+				FE58E5F124BFA41800A8E150 /* Info.plist */,
+			);
+			path = "Green&GleamTests";
+			sourceTree = "<group>";
+		};
+		FE58E5F924BFA41800A8E150 /* Green&GleamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE58E5FA24BFA41800A8E150 /* Green_GleamUITests.swift */,
+				FE58E5FC24BFA41800A8E150 /* Info.plist */,
+			);
+			path = "Green&GleamUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE58E5D124BFA41600A8E150 /* Green&Gleam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE58E5FF24BFA41800A8E150 /* Build configuration list for PBXNativeTarget "Green&Gleam" */;
+			buildPhases = (
+				FE58E5CE24BFA41600A8E150 /* Sources */,
+				FE58E5CF24BFA41600A8E150 /* Frameworks */,
+				FE58E5D024BFA41600A8E150 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Green&Gleam";
+			productName = "Green&Gleam";
+			productReference = FE58E5D224BFA41600A8E150 /* Green&Gleam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE58E5EA24BFA41800A8E150 /* Green&GleamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE58E60224BFA41800A8E150 /* Build configuration list for PBXNativeTarget "Green&GleamTests" */;
+			buildPhases = (
+				FE58E5E724BFA41800A8E150 /* Sources */,
+				FE58E5E824BFA41800A8E150 /* Frameworks */,
+				FE58E5E924BFA41800A8E150 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE58E5ED24BFA41800A8E150 /* PBXTargetDependency */,
+			);
+			name = "Green&GleamTests";
+			productName = "Green&GleamTests";
+			productReference = FE58E5EB24BFA41800A8E150 /* Green&GleamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE58E5F524BFA41800A8E150 /* Green&GleamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE58E60524BFA41800A8E150 /* Build configuration list for PBXNativeTarget "Green&GleamUITests" */;
+			buildPhases = (
+				FE58E5F224BFA41800A8E150 /* Sources */,
+				FE58E5F324BFA41800A8E150 /* Frameworks */,
+				FE58E5F424BFA41800A8E150 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE58E5F824BFA41800A8E150 /* PBXTargetDependency */,
+			);
+			name = "Green&GleamUITests";
+			productName = "Green&GleamUITests";
+			productReference = FE58E5F624BFA41800A8E150 /* Green&GleamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE58E5CA24BFA41600A8E150 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Lyndsey Narvaez";
+				TargetAttributes = {
+					FE58E5D124BFA41600A8E150 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					FE58E5EA24BFA41800A8E150 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FE58E5D124BFA41600A8E150;
+					};
+					FE58E5F524BFA41800A8E150 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FE58E5D124BFA41600A8E150;
+					};
+				};
+			};
+			buildConfigurationList = FE58E5CD24BFA41600A8E150 /* Build configuration list for PBXProject "Green&Gleam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE58E5C924BFA41600A8E150;
+			productRefGroup = FE58E5D324BFA41600A8E150 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE58E5D124BFA41600A8E150 /* Green&Gleam */,
+				FE58E5EA24BFA41800A8E150 /* Green&GleamTests */,
+				FE58E5F524BFA41800A8E150 /* Green&GleamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE58E5D024BFA41600A8E150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE58E5E524BFA41800A8E150 /* LaunchScreen.storyboard in Resources */,
+				FE58E5E224BFA41800A8E150 /* Assets.xcassets in Resources */,
+				FE58E5DD24BFA41600A8E150 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE58E5E924BFA41800A8E150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE58E5F424BFA41800A8E150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE58E5CE24BFA41600A8E150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE58E5DA24BFA41600A8E150 /* ViewController.swift in Sources */,
+				FE58E5D624BFA41600A8E150 /* AppDelegate.swift in Sources */,
+				FE58E5E024BFA41600A8E150 /* Green_Gleam.xcdatamodeld in Sources */,
+				FE58E5D824BFA41600A8E150 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE58E5E724BFA41800A8E150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE58E5F024BFA41800A8E150 /* Green_GleamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE58E5F224BFA41800A8E150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE58E5FB24BFA41800A8E150 /* Green_GleamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE58E5ED24BFA41800A8E150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE58E5D124BFA41600A8E150 /* Green&Gleam */;
+			targetProxy = FE58E5EC24BFA41800A8E150 /* PBXContainerItemProxy */;
+		};
+		FE58E5F824BFA41800A8E150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE58E5D124BFA41600A8E150 /* Green&Gleam */;
+			targetProxy = FE58E5F724BFA41800A8E150 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE58E5DB24BFA41600A8E150 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE58E5DC24BFA41600A8E150 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE58E5E324BFA41800A8E150 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE58E5E424BFA41800A8E150 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE58E5FD24BFA41800A8E150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE58E5FE24BFA41800A8E150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE58E60024BFA41800A8E150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8AJ35GZYL;
+				INFOPLIST_FILE = "Green&Gleam/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lyndseynarvaez.Green-Gleam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE58E60124BFA41800A8E150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8AJ35GZYL;
+				INFOPLIST_FILE = "Green&Gleam/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lyndseynarvaez.Green-Gleam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE58E60324BFA41800A8E150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8AJ35GZYL;
+				INFOPLIST_FILE = "Green&GleamTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lyndseynarvaez.Green-GleamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Green&Gleam.app/Green&Gleam";
+			};
+			name = Debug;
+		};
+		FE58E60424BFA41800A8E150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8AJ35GZYL;
+				INFOPLIST_FILE = "Green&GleamTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lyndseynarvaez.Green-GleamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Green&Gleam.app/Green&Gleam";
+			};
+			name = Release;
+		};
+		FE58E60624BFA41800A8E150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8AJ35GZYL;
+				INFOPLIST_FILE = "Green&GleamUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lyndseynarvaez.Green-GleamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Green&Gleam";
+			};
+			name = Debug;
+		};
+		FE58E60724BFA41800A8E150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8AJ35GZYL;
+				INFOPLIST_FILE = "Green&GleamUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lyndseynarvaez.Green-GleamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Green&Gleam";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE58E5CD24BFA41600A8E150 /* Build configuration list for PBXProject "Green&Gleam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE58E5FD24BFA41800A8E150 /* Debug */,
+				FE58E5FE24BFA41800A8E150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE58E5FF24BFA41800A8E150 /* Build configuration list for PBXNativeTarget "Green&Gleam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE58E60024BFA41800A8E150 /* Debug */,
+				FE58E60124BFA41800A8E150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE58E60224BFA41800A8E150 /* Build configuration list for PBXNativeTarget "Green&GleamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE58E60324BFA41800A8E150 /* Debug */,
+				FE58E60424BFA41800A8E150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE58E60524BFA41800A8E150 /* Build configuration list for PBXNativeTarget "Green&GleamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE58E60624BFA41800A8E150 /* Debug */,
+				FE58E60724BFA41800A8E150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE58E5DE24BFA41600A8E150 /* Green_Gleam.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE58E5DF24BFA41600A8E150 /* Green_Gleam.xcdatamodel */,
+			);
+			currentVersion = FE58E5DF24BFA41600A8E150 /* Green_Gleam.xcdatamodel */;
+			path = Green_Gleam.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FE58E5CA24BFA41600A8E150 /* Project object */;
+}
