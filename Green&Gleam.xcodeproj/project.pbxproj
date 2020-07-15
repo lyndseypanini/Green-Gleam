@@ -16,6 +16,7 @@
 		FE58E5E524BFA41800A8E150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE58E5E324BFA41800A8E150 /* LaunchScreen.storyboard */; };
 		FE58E5F024BFA41800A8E150 /* Green_GleamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5EF24BFA41800A8E150 /* Green_GleamTests.swift */; };
 		FE58E5FB24BFA41800A8E150 /* Green_GleamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5FA24BFA41800A8E150 /* Green_GleamUITests.swift */; };
+		FE58E60924BFA8F700A8E150 /* ChallengePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E60824BFA8F700A8E150 /* ChallengePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FE58E5F624BFA41800A8E150 /* Green&GleamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green&GleamUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE58E5FA24BFA41800A8E150 /* Green_GleamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_GleamUITests.swift; sourceTree = "<group>"; };
 		FE58E5FC24BFA41800A8E150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE58E60824BFA8F700A8E150 /* ChallengePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				FE58E5DB24BFA41600A8E150 /* Main.storyboard */,
 				FE58E5E124BFA41800A8E150 /* Assets.xcassets */,
 				FE58E5E324BFA41800A8E150 /* LaunchScreen.storyboard */,
+				FE58E60824BFA8F700A8E150 /* ChallengePageViewController.swift */,
 				FE58E5E624BFA41800A8E150 /* Info.plist */,
 				FE58E5DE24BFA41600A8E150 /* Green_Gleam.xcdatamodeld */,
 			);
@@ -265,6 +268,7 @@
 				FE58E5DA24BFA41600A8E150 /* ViewController.swift in Sources */,
 				FE58E5D624BFA41600A8E150 /* AppDelegate.swift in Sources */,
 				FE58E5E024BFA41600A8E150 /* Green_Gleam.xcdatamodeld in Sources */,
+				FE58E60924BFA8F700A8E150 /* ChallengePageViewController.swift in Sources */,
 				FE58E5D824BFA41600A8E150 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
