@@ -51,7 +51,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="bl4-i4-6qh"/>
-                                    <barButtonItem title="👚" width="137" id="FsG-PF-Hg4"/>
+                                    <barButtonItem title="👚" width="137" id="FsG-PF-Hg4">
+                                        <connections>
+                                            <segue destination="E4b-uJ-enB" kind="show" id="Pwf-mE-JY1"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="rce-kY-4ef"/>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,6 +164,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYm-AV-aqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qad-9r-hpI">
+            <objects>
+                <viewController id="E4b-uJ-enB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9qF-rK-oIa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-DI-ZZT">
+                                <rect key="frame" x="180" y="271" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fashion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF0-i5-fuj">
+                                <rect key="frame" x="180" y="261" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dD5-7W-9ZT">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="W4Z-w4-rtC"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="eEO-P9-OhO"/>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="ahI-Gb-DCz"/>
+                                    <barButtonItem title="👚" width="137" id="coh-Ll-6yi"/>
+                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="6lk-bY-OCq"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="UCt-af-mPt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EK6-Ae-2t1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDT-i1-DQn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.913043478261" y="955.58035714285711"/>
         </scene>
     </scenes>
     <resources>

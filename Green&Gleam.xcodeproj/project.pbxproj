@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16393F7124BFB4070069997F /* FashionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16393F7024BFB4070069997F /* FashionViewController.swift */; };
 		313EC14524BFAE780046F5C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313EC14424BFAE780046F5C4 /* SearchViewController.swift */; };
 		FE58E5D624BFA41600A8E150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5D524BFA41600A8E150 /* AppDelegate.swift */; };
 		FE58E5D824BFA41600A8E150 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5D724BFA41600A8E150 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16393F7024BFB4070069997F /* FashionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionViewController.swift; sourceTree = "<group>"; };
 		313EC14424BFAE780046F5C4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FE58E5D224BFA41600A8E150 /* Green&Gleam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Green&Gleam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE58E5D524BFA41600A8E150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				FE58E5E624BFA41800A8E150 /* Info.plist */,
 				FE58E5DE24BFA41600A8E150 /* Green_Gleam.xcdatamodeld */,
 				313EC14424BFAE780046F5C4 /* SearchViewController.swift */,
+				16393F7024BFB4070069997F /* FashionViewController.swift */,
 			);
 			path = "Green&Gleam";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				FE58E5E024BFA41600A8E150 /* Green_Gleam.xcdatamodeld in Sources */,
 				FE58E60924BFA8F700A8E150 /* ChallengePageViewController.swift in Sources */,
 				FE58E5D824BFA41600A8E150 /* SceneDelegate.swift in Sources */,
+				16393F7124BFB4070069997F /* FashionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
