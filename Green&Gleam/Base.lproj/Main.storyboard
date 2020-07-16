@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CwA-qM-XJc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CwA-qM-XJc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Green_Gleam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1316 ✨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-Ug-f4m">
@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lfc-AJ-mJl">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Item" image="star.fill" catalog="system" id="rDq-LL-b8H">
@@ -71,14 +71,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1232" y="117"/>
         </scene>
         <!--Challenge Page View Controller-->
         <scene sceneID="TuX-Ls-yLT">
             <objects>
                 <viewController id="jA0-oZ-fS8" customClass="ChallengePageViewController" customModule="Green_Gleam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v1z-dS-Ypl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="challenge page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sq7-FK-HAb">
@@ -89,13 +89,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6uG-Oh-flh">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Item" image="star.fill" catalog="system" id="LfD-8g-dfl"/>
-                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="z6M-r6-VYR"/>
-                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="Ze9-pd-MVS"/>
-                                    <barButtonItem title="👚" width="137" id="hz4-3L-dzI"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="z6M-r6-VYR">
+                                        <connections>
+                                            <segue destination="Qr6-Td-8J5" kind="show" id="kSf-bB-kWl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="Ze9-pd-MVS">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="ONk-JX-qdB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="👚" width="137" id="hz4-3L-dzI">
+                                        <connections>
+                                            <segue destination="E4b-uJ-enB" kind="show" id="EEm-nF-0SM"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="7cN-r8-8fl"/>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,17 +127,29 @@
             <objects>
                 <viewController id="Qr6-Td-8J5" customClass="SearchViewController" customModule="Green_Gleam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hza-fV-DhS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uCp-Q4-L72">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="c7p-ye-TxB"/>
+                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="c7p-ye-TxB">
+                                        <connections>
+                                            <segue destination="jA0-oZ-fS8" kind="show" id="eAV-ly-jb9"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="GAX-Dw-lhe"/>
-                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="PCk-NQ-iR2"/>
-                                    <barButtonItem title="👚" width="137" id="s2F-VV-1aZ"/>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="PCk-NQ-iR2">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="pbE-gq-9Ip"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="👚" width="137" id="s2F-VV-1aZ">
+                                        <connections>
+                                            <segue destination="E4b-uJ-enB" kind="show" id="XwE-O4-0m3"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="CDb-nR-It1"/>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -170,35 +194,69 @@
             <objects>
                 <viewController id="E4b-uJ-enB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9qF-rK-oIa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-DI-ZZT">
-                                <rect key="frame" x="180" y="271" width="0.0" height="0.0"/>
+                                <rect key="frame" x="180" y="286" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fashion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF0-i5-fuj">
-                                <rect key="frame" x="180" y="261" width="59" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fast fashion description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF0-i5-fuj">
+                                <rect key="frame" x="26" y="245" width="363" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="backgroundColor" red="0.91077093909999995" green="0.8941375855" blue="0.75857589349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dD5-7W-9ZT">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="W4Z-w4-rtC"/>
-                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="eEO-P9-OhO"/>
-                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="ahI-Gb-DCz"/>
+                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="W4Z-w4-rtC">
+                                        <connections>
+                                            <segue destination="jA0-oZ-fS8" kind="show" id="yKF-Uu-KWH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="eEO-P9-OhO">
+                                        <connections>
+                                            <segue destination="Qr6-Td-8J5" kind="show" id="MLh-2Q-l6b"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="ahI-Gb-DCz">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="YbS-Vw-MLs"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="👚" width="137" id="coh-Ll-6yi"/>
                                     <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="6lk-bY-OCq"/>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbf-My-7vU">
+                                <rect key="frame" x="26" y="432" width="363" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thrifted2" translatesAutoresizingMaskIntoConstraints="NO" id="Koz-xJ-0bf">
+                                <rect key="frame" x="272" y="108" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thrifted1" translatesAutoresizingMaskIntoConstraints="NO" id="TWh-Pj-C2m">
+                                <rect key="frame" x="151" y="108" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="embroidery" translatesAutoresizingMaskIntoConstraints="NO" id="vC0-sM-uV0">
+                                <rect key="frame" x="26" y="108" width="117" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lhh-AA-aYa">
+                                <rect key="frame" x="26" y="599" width="363" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="UCt-af-mPt"/>
@@ -207,13 +265,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDT-i1-DQn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1973.913043478261" y="955.58035714285711"/>
+            <point key="canvasLocation" x="1985.5072463768117" y="959.59821428571422"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Pwf-mE-JY1"/>
+        <segue reference="MLh-2Q-l6b"/>
+        <segue reference="yKF-Uu-KWH"/>
+        <segue reference="YbS-Vw-MLs"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="embroidery" width="564" height="846"/>
         <image name="globe" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="thrifted1" width="564" height="705"/>
+        <image name="thrifted2" width="500" height="667"/>
     </resources>
 </document>
