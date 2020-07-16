@@ -8,15 +8,34 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var imagePicker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imagePicker.delegate = self
     }
     
-
+    
+    @IBAction func insertCameraRollTapped(_ sender: UIButton) {
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func profileTapped(_ sender: UIBarButtonItem) {
+        
+    }
+    
+    
+    @IBOutlet weak var displayImage: UIImageView!
+    
+    internal func imagePickerController(_ picker:UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any] ) {
+           
+           if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            displayImage.image = selectedImage
+           }
+        
     /*
     // MARK: - Navigation
 
@@ -27,4 +46,5 @@ class ProfileViewController: UIViewController {
     }
     */
 
+}
 }

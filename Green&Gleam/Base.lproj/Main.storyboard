@@ -38,7 +38,7 @@
                                     <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="rce-kY-4ef">
                                         <connections>
                                             <action selector="profileTapped:" destination="BYZ-38-t0r" id="GHO-zD-lCE"/>
-                                            <segue destination="jl9-rK-vQW" kind="show" id="pr5-Cl-XVC"/>
+                                            <segue destination="jl9-rK-vQW" kind="show" id="rpw-Sx-vdj"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -131,21 +131,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZT-U4-ueu">
-                                <rect key="frame" x="186" y="313" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="spongequeen16" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aca-4m-rvZ">
-                                <rect key="frame" x="173" y="81" width="221" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91077093909999995" green="0.8941375855" blue="0.75857589349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="26"/>
-                                <color key="textColor" red="0.1099237278" green="0.4209705889" blue="0.18818074460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFe-Wd-lqF">
                                 <rect key="frame" x="5" y="764" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -172,19 +157,34 @@
                                     </barButtonItem>
                                     <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="fEb-qa-i3I">
                                         <connections>
-                                            <action selector="profileTapped:" destination="BYZ-38-t0r" id="RxD-Mv-3DT"/>
+                                            <action selector="profileTapped:" destination="jl9-rK-vQW" id="fPf-x8-xxi"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZT-U4-ueu">
+                                <rect key="frame" x="184" y="355.5" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="spongequeen16" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aca-4m-rvZ">
+                                <rect key="frame" x="171" y="123.5" width="221" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91077093909999995" green="0.8941375855" blue="0.75857589349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="0.1099237278" green="0.4209705889" blue="0.18818074460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VF3-dU-CpH">
-                                <rect key="frame" x="35" y="81" width="130" height="130"/>
+                                <rect key="frame" x="33" y="123.5" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.460492228" green="0.26230569949999999" blue="0.26230569949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz4-3l-E1Q">
-                                <rect key="frame" x="173" y="121" width="221" height="90"/>
+                                <rect key="frame" x="171" y="163.5" width="221" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91077093909999995" green="0.8941375855" blue="0.75857589349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">i love thrift flips
@@ -194,29 +194,35 @@ and planting succulents!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1316 ✨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDi-8y-y2r">
-                                <rect key="frame" x="121" y="508" width="172" height="59"/>
+                                <rect key="frame" x="119" y="550.5" width="172" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="49"/>
                                 <color key="textColor" red="0.97263079880000003" green="0.83690255879999997" blue="0.45873147250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-07-16 at 10.58.29 AM" translatesAutoresizingMaskIntoConstraints="NO" id="1ex-jr-X8G">
-                                <rect key="frame" x="85" y="329" width="245" height="171"/>
+                                <rect key="frame" x="83" y="371.5" width="245" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHJ-Ns-bYe">
-                                <rect key="frame" x="35" y="215" width="130" height="30"/>
+                                <rect key="frame" x="33" y="257.5" width="130" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="choose from camera roll">
                                     <color key="titleColor" red="0.26655906439999999" green="0.1063604131" blue="0.062722034750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="insertCameraRollTapped:" destination="jl9-rK-vQW" eventType="touchUpInside" id="HR4-TV-fuN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="c1f-JZ-EUf"/>
                     </view>
                     <navigationItem key="navigationItem" id="QzO-VJ-zhf"/>
+                    <connections>
+                        <outlet property="displayImage" destination="VF3-dU-CpH" id="t2T-YY-sKE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ac-16-qVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -527,7 +533,7 @@ and planting succulents!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KG1-aS-XtP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1157.9710144927537" y="959.59821428571422"/>
+            <point key="canvasLocation" x="1230" y="960"/>
         </scene>
         <!--Search Clothing View Controller-->
         <scene sceneID="DMj-u8-AiV">
@@ -646,7 +652,7 @@ and planting succulents!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBU-0p-OKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="778.26086956521749" y="1612.5"/>
+            <point key="canvasLocation" x="516" y="1862"/>
         </scene>
         <!--Food Choices View Controller-->
         <scene sceneID="nJ4-RM-0Pq">
@@ -705,7 +711,7 @@ and planting succulents!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeC-NS-RFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1733.3333333333335" y="1628.5714285714284"/>
+            <point key="canvasLocation" x="1728" y="1862"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TiU-A1-nbk">
@@ -830,7 +836,7 @@ they are worn out, and again we have tons
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDT-i1-DQn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1985.5072463768117" y="959.59821428571422"/>
+            <point key="canvasLocation" x="2112" y="960"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -839,7 +845,7 @@ they are worn out, and again we have tons
         <segue reference="eyz-Sf-1e7"/>
         <segue reference="CQs-Ur-k9y"/>
         <segue reference="9dq-XF-RsR"/>
-        <segue reference="pr5-Cl-XVC"/>
+        <segue reference="vJ0-un-e8z"/>
         <segue reference="EMu-Ee-FLe"/>
     </inferredMetricsTieBreakers>
     <resources>

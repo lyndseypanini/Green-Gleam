@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16393F7124BFB4070069997F /* FashionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16393F7024BFB4070069997F /* FashionViewController.swift */; };
 		313EC14524BFAE780046F5C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313EC14424BFAE780046F5C4 /* SearchViewController.swift */; };
 		FAF7D3F024BFFB0700583D29 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7D3EF24BFFB0700583D29 /* ProfileViewController.swift */; };
 		FAF7D3F224C0016000583D29 /* SearchClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7D3F124C0016000583D29 /* SearchClothingViewController.swift */; };
@@ -22,6 +21,7 @@
 		FE58E5F024BFA41800A8E150 /* Green_GleamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5EF24BFA41800A8E150 /* Green_GleamTests.swift */; };
 		FE58E5FB24BFA41800A8E150 /* Green_GleamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E5FA24BFA41800A8E150 /* Green_GleamUITests.swift */; };
 		FE58E60924BFA8F700A8E150 /* ChallengePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE58E60824BFA8F700A8E150 /* ChallengePageViewController.swift */; };
+		FEE7FC7224C0DD5A00DE1897 /* FashionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7FC7124C0DD5A00DE1897 /* FashionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16393F7024BFB4070069997F /* FashionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionViewController.swift; sourceTree = "<group>"; };
 		313EC14424BFAE780046F5C4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FAF7D3EF24BFFB0700583D29 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FAF7D3F124C0016000583D29 /* SearchClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchClothingViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		FE58E5FA24BFA41800A8E150 /* Green_GleamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_GleamUITests.swift; sourceTree = "<group>"; };
 		FE58E5FC24BFA41800A8E150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE58E60824BFA8F700A8E150 /* ChallengePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengePageViewController.swift; sourceTree = "<group>"; };
+		FEE7FC7124C0DD5A00DE1897 /* FashionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,8 @@
 				FE58E60824BFA8F700A8E150 /* ChallengePageViewController.swift */,
 				FE58E5E624BFA41800A8E150 /* Info.plist */,
 				FE58E5DE24BFA41600A8E150 /* Green_Gleam.xcdatamodeld */,
+				FEE7FC7124C0DD5A00DE1897 /* FashionViewController.swift */,
 				313EC14424BFAE780046F5C4 /* SearchViewController.swift */,
-				16393F7024BFB4070069997F /* FashionViewController.swift */,
 				FAF7D3EF24BFFB0700583D29 /* ProfileViewController.swift */,
 				FAF7D3F124C0016000583D29 /* SearchClothingViewController.swift */,
 				FAF7D3F324C003A400583D29 /* FoodChoicesViewController.swift */,
@@ -289,7 +289,7 @@
 				FE58E60924BFA8F700A8E150 /* ChallengePageViewController.swift in Sources */,
 				FE58E5D824BFA41600A8E150 /* SceneDelegate.swift in Sources */,
 				FAF7D3F024BFFB0700583D29 /* ProfileViewController.swift in Sources */,
-				16393F7124BFB4070069997F /* FashionViewController.swift in Sources */,
+				FEE7FC7224C0DD5A00DE1897 /* FashionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

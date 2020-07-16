@@ -2,7 +2,7 @@
 //  FashionViewController.swift
 //  Green&Gleam
 //
-//  Created by Vivian Wang on 7/15/20.
+//  Created by Lyndsey Narvaez on 7/16/20.
 //  Copyright © 2020 Lyndsey Narvaez. All rights reserved.
 //
 
