@@ -58,7 +58,12 @@
                                             <segue destination="E4b-uJ-enB" kind="show" id="Pwf-mE-JY1"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="rce-kY-4ef"/>
+                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="rce-kY-4ef">
+                                        <connections>
+                                            <action selector="profileTapped:" destination="BYZ-38-t0r" id="GHO-zD-lCE"/>
+                                            <segue destination="jl9-rK-vQW" kind="show" id="eIj-ve-ypC"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
@@ -118,6 +123,54 @@
             </objects>
             <point key="canvasLocation" x="1230.4347826086957" y="116.51785714285714"/>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="NJF-fo-xLR">
+            <objects>
+                <viewController id="jl9-rK-vQW" customClass="ProfileViewController" customModule="Green_Gleam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mAj-bE-Mu3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZT-U4-ueu">
+                                <rect key="frame" x="186" y="313" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="profile " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aca-4m-rvZ">
+                                <rect key="frame" x="186" y="278" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFe-Wd-lqF">
+                                <rect key="frame" x="5" y="764" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="a5n-GA-RgH"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="PJj-o0-LFW"/>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="rW4-cW-c9R"/>
+                                    <barButtonItem title="👚" width="137" id="D1N-Af-Pr0"/>
+                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="fEb-qa-i3I">
+                                        <connections>
+                                            <action selector="profileTapped:" destination="BYZ-38-t0r" id="RxD-Mv-3DT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="c1f-JZ-EUf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QzO-VJ-zhf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ac-16-qVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456" y="247"/>
+        </scene>
         <!--Challenge Page View Controller-->
         <scene sceneID="TuX-Ls-yLT">
             <objects>
@@ -167,7 +220,7 @@
             </objects>
             <point key="canvasLocation" x="306" y="956"/>
         </scene>
-        <!--Search View Controller-->
+        <!--🔎-->
         <scene sceneID="MsB-C0-a9d">
             <objects>
                 <viewController id="Qr6-Td-8J5" customClass="SearchViewController" customModule="Green_Gleam" customModuleProvider="target" sceneMemberID="viewController">
@@ -199,8 +252,48 @@
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OX5-0L-E4W">
-                                <rect key="frame" x="180" y="250" width="54" height="21"/>
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="" placeholder="Search" showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bul-gW-dUG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="yes"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqV-Qb-e2g">
+                                <rect key="frame" x="20" y="88" width="158" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="clothing"/>
+                                <connections>
+                                    <action selector="clothingTapped:" destination="Qr6-Td-8J5" eventType="touchUpInside" id="bft-fQ-Iml"/>
+                                    <segue destination="dn5-vR-FS8" kind="show" id="upP-21-vlZ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clothessss" translatesAutoresizingMaskIntoConstraints="NO" id="VIa-QX-nPk">
+                                <rect key="frame" x="123" y="173" width="138" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="← click here for sustainable clothing stores to shop at " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBl-dl-v9Y">
+                                <rect key="frame" x="186" y="114" width="265" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgs-35-dwZ">
+                                <rect key="frame" x="11" y="381" width="298" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="healthy food"/>
+                                <connections>
+                                    <segue destination="S5d-WA-Joa" kind="show" id="eyQ-uB-Svh"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cookies" translatesAutoresizingMaskIntoConstraints="NO" id="Io8-cA-PMg">
+                                <rect key="frame" x="210" y="472" width="165" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="↑ healthier food options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGd-o1-8U4">
+                                <rect key="frame" x="20" y="567" width="185" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -210,11 +303,184 @@
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="DCI-dv-sDL"/>
                     </view>
-                    <navigationItem key="navigationItem" id="H5Z-R6-4fb"/>
+                    <navigationItem key="navigationItem" title="🔎" id="4AE-qH-lEE"/>
+                    <connections>
+                        <outlet property="searchTapped" destination="Bul-gW-dUG" id="2SL-fS-TyA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KG1-aS-XtP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="960"/>
+            <point key="canvasLocation" x="1157.9710144927537" y="959.59821428571422"/>
+        </scene>
+        <!--Search Clothing View Controller-->
+        <scene sceneID="DMj-u8-AiV">
+            <objects>
+                <viewController id="dn5-vR-FS8" customClass="SearchClothingViewController" customModule="Green_Gleam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qRk-o3-01t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUSTAINABLE CLOTHING " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItN-qx-sHV">
+                                <rect key="frame" x="10" y="76" width="395" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOM-m2-Aik">
+                                <rect key="frame" x="50" y="200" width="12" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LA THRIFT STORE " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2K-In-u4w">
+                                <rect key="frame" x="78" y="200" width="228" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 SUSTAINABLE STORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgO-jj-ae5">
+                                <rect key="frame" x="118" y="312" width="287" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 A GOOD STORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ekw-N1-NuS">
+                                <rect key="frame" x="20" y="462" width="214" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tS-xH-Tgy">
+                                <rect key="frame" x="240" y="652" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="★" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2v-EB-vsO">
+                                <rect key="frame" x="0.0" y="724" width="414" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xxa-na-Oip">
+                                <rect key="frame" x="0.0" y="745" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="aUG-Yy-wdC"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="1o9-9a-nm2"/>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="kLh-6h-efT">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="GRJ-EU-4cA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="👚" width="137" id="QsT-mU-yBs"/>
+                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="NGO-7g-JGk">
+                                        <connections>
+                                            <action selector="profileTapped:" destination="BYZ-38-t0r" id="eB7-0v-hV8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="xwX-ww-nqs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oRJ-hG-zbW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBU-0p-OKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778.26086956521749" y="1612.5"/>
+        </scene>
+        <!--Food Choices View Controller-->
+        <scene sceneID="nJ4-RM-0Pq">
+            <objects>
+                <viewController id="S5d-WA-Joa" customClass="FoodChoicesViewController" customModule="Green_Gleam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXX-hS-wso">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HEALTHY FOOD OPTIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af6-Ue-Bar">
+                                <rect key="frame" x="19" y="104" width="377" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TD2-3C-NXo">
+                                <rect key="frame" x="49" y="202" width="12" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NO RED MEAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0b8-Dc-MWG">
+                                <rect key="frame" x="69" y="202" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. VEGAN COOKIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1S-P6-0fg">
+                                <rect key="frame" x="156" y="321" width="238" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3. BACON ALTERNATIVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRB-0G-vsA">
+                                <rect key="frame" x="20" y="473" width="295" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQi-jf-nUd">
+                                <rect key="frame" x="0.0" y="753" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="M9e-zs-aii"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="vS8-CV-cMK"/>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="sTa-ph-37I">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="U8l-La-LpA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="👚" width="137" id="XmL-oH-xlN"/>
+                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="DnZ-BE-MIH">
+                                        <connections>
+                                            <action selector="profileTapped:" destination="BYZ-38-t0r" id="N2Y-6q-Ybk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="★" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjb-vI-sBQ">
+                                <rect key="frame" x="0.0" y="732" width="414" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10849618499999999" green="0.42020418100000001" blue="0.18920496479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="jbG-5c-Dnf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jhw-8Z-Uek"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jeC-NS-RFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1733.3333333333335" y="1628.5714285714284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TiU-A1-nbk">
@@ -316,12 +582,16 @@
     <inferredMetricsTieBreakers>
         <segue reference="Pwf-mE-JY1"/>
         <segue reference="cv5-xo-2uE"/>
-        <segue reference="3NG-Cs-Mnc"/>
-        <segue reference="ONk-JX-qdB"/>
+        <segue reference="6Xx-ve-QhG"/>
+        <segue reference="U8l-La-LpA"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="clothessss" width="225" height="225"/>
+        <image name="clothing" width="225" height="224"/>
+        <image name="cookies" width="207" height="243"/>
         <image name="embroidery" width="564" height="846"/>
         <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="healthy food" width="300" height="168"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>

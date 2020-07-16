@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         trendingTitle.layer.cornerRadius = 20
     }
 
+    @IBAction func profileTapped(_ sender: Any) {
+    }
     @IBOutlet weak var ChallengeTapped: UIToolbar!
     
     @IBAction func calculatorTapped(_ sender: UIButton) {
