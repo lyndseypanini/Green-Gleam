@@ -10,12 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var trendingTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        trendingTitle.layer.cornerRadius = 20
     }
 
     @IBOutlet weak var ChallengeTapped: UIToolbar!
     
+    @IBAction func calculatorTapped(_ sender: UIButton) {
+    }
 }
 
