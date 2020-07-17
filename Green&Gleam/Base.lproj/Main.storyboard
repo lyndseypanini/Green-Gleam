@@ -63,12 +63,13 @@
                                 <rect key="frame" x="33" y="524" width="349" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.72801727059999999" green="0.75585609669999998" blue="0.58428549770000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Carbon Footprint Calculator">
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="27"/>
+                                <state key="normal" title="carbon footprint calculator">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="calculatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nfN-5m-jiA"/>
+                                    <action selector="carbonFootprintCalcButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kYl-EJ-KA5"/>
                                     <segue destination="jA0-oZ-fS8" kind="show" id="6Xx-ve-QhG"/>
                                 </connections>
                             </button>
@@ -108,7 +109,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <state key="normal" title="your challenge of the day"/>
                                 <connections>
-                                    <segue destination="jA0-oZ-fS8" kind="show" id="Omw-zD-Mfn"/>
+                                    <segue destination="jA0-oZ-fS8" kind="show" id="AiZ-vZ-wAa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -233,6 +234,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="3BB-yK-BeS">
+                                <rect key="frame" x="78" y="679" width="254" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.72801727059999999" green="0.75585609669999998" blue="0.58428549770000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="c1f-JZ-EUf"/>
@@ -926,11 +932,11 @@ they are worn out, and again we have tons
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Pwf-mE-JY1"/>
+        <segue reference="kEl-HR-AvS"/>
         <segue reference="eyQ-uB-Svh"/>
         <segue reference="upP-21-vlZ"/>
-        <segue reference="cv5-xo-2uE"/>
-        <segue reference="3NG-Cs-Mnc"/>
+        <segue reference="CQs-Ur-k9y"/>
+        <segue reference="9dq-XF-RsR"/>
         <segue reference="rpw-Sx-vdj"/>
         <segue reference="EMu-Ee-FLe"/>
     </inferredMetricsTieBreakers>
