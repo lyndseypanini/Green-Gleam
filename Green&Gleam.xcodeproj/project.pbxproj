@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		313EC14524BFAE780046F5C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313EC14424BFAE780046F5C4 /* SearchViewController.swift */; };
+		FA6BB90624C167E600BADE8A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6BB90524C167E600BADE8A /* CalculatorViewController.swift */; };
 		FAF7D3F024BFFB0700583D29 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7D3EF24BFFB0700583D29 /* ProfileViewController.swift */; };
 		FAF7D3F224C0016000583D29 /* SearchClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7D3F124C0016000583D29 /* SearchClothingViewController.swift */; };
 		FAF7D3F424C003A400583D29 /* FoodChoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7D3F324C003A400583D29 /* FoodChoicesViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		313EC14424BFAE780046F5C4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FA6BB90524C167E600BADE8A /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		FAF7D3EF24BFFB0700583D29 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FAF7D3F124C0016000583D29 /* SearchClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchClothingViewController.swift; sourceTree = "<group>"; };
 		FAF7D3F324C003A400583D29 /* FoodChoicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodChoicesViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				FAF7D3EF24BFFB0700583D29 /* ProfileViewController.swift */,
 				FAF7D3F124C0016000583D29 /* SearchClothingViewController.swift */,
 				FAF7D3F324C003A400583D29 /* FoodChoicesViewController.swift */,
+				FA6BB90524C167E600BADE8A /* CalculatorViewController.swift */,
 			);
 			path = "Green&Gleam";
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				313EC14524BFAE780046F5C4 /* SearchViewController.swift in Sources */,
 				FAF7D3F424C003A400583D29 /* FoodChoicesViewController.swift in Sources */,
+				FA6BB90624C167E600BADE8A /* CalculatorViewController.swift in Sources */,
 				FE58E5DA24BFA41600A8E150 /* ViewController.swift in Sources */,
 				FAF7D3F224C0016000583D29 /* SearchClothingViewController.swift in Sources */,
 				FE58E5D624BFA41600A8E150 /* AppDelegate.swift in Sources */,
