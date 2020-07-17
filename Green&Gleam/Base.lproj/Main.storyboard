@@ -839,6 +839,9 @@ they are worn out, and again we have tons
                                     <color key="titleColor" red="0.1099237278" green="0.4209705889" blue="0.18818074460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" red="0.26655906439999999" green="0.1063604131" blue="0.062722034750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fKa-oB-Qhp" kind="show" id="hj8-P1-YEn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -849,6 +852,53 @@ they are worn out, and again we have tons
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDT-i1-DQn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2112" y="960"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r7C-Ua-4N1">
+            <objects>
+                <viewController id="fKa-oB-Qhp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Iz-zR-D3d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIe-sV-AvN">
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="azq-qo-wRL"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="Wel-uV-zI2"/>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="q6R-h5-9B8"/>
+                                    <barButtonItem title="👚" width="137" id="uBk-b3-Lbn"/>
+                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="4d6-I0-9tY"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🙈 COMING SOON 🙈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPv-5e-NyD">
+                                <rect key="frame" x="32" y="374" width="351" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.460492228" green="0.26230569949999999" blue="0.26230569949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0u-mJ-Gd9">
+                                <rect key="frame" x="0.0" y="91" width="414" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91077093909999995" green="0.8941375855" blue="0.75857589349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="28"/>
+                                <state key="normal" title="Thrift Flip Tutorials">
+                                    <color key="titleColor" red="0.1099237278" green="0.4209705889" blue="0.18818074460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.26655906439999999" green="0.1063604131" blue="0.062722034750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6rw-Uk-auJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="58s-rH-86C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4sD-Df-NgM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2927.536231884058" y="961.60714285714278"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
