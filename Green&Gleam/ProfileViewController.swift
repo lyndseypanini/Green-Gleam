@@ -10,6 +10,10 @@ import UIKit
 
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var profileDescription: UILabel!
+   
+    @IBOutlet weak var textField: UITextField!
+    
     var imagePicker = UIImagePickerController()
 
     override func viewDidLoad() {
@@ -46,5 +50,12 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     */
 
+    }
+    
+    @IBAction func enterTapped(_ sender: UIButton) {
+        if let newTitle = textField.text {
+        profileDescription.text = newTitle
+    }
+    
 }
 }
