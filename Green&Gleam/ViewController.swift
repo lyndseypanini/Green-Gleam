@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBAction func calculatorTapped(_ sender: UIButton) {
     }
     @IBAction func carbonFootprintCalcButtonTapped(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string:"https://www.apple.com")! as URL, options: [:], completionHandler: nil)
+        UIApplication.shared.open(URL(string:"https://www.carbonfootprint.com/calculator.aspx")! as URL, options: [:], completionHandler: nil)
     }
 }
 
