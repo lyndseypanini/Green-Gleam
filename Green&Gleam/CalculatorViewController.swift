@@ -25,20 +25,7 @@ class CalculatorViewController: UIViewController {
     
 
    
-    @IBAction func numbersTapped(_ sender: UIButton) {
-        if performingMath == true {
 
-
-        performingMath = false
-
-        }
-
-        else {
-
-     
-        }
-    }
-}
     
         
         
@@ -50,7 +37,7 @@ class CalculatorViewController: UIViewController {
      // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
@@ -59,3 +46,5 @@ class CalculatorViewController: UIViewController {
 
 
 
+
+}
