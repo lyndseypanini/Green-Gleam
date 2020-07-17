@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CwA-qM-XJc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CwA-qM-XJc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -830,6 +830,16 @@ they are worn out, and again we have tons
                                     <segue destination="dn5-vR-FS8" kind="show" id="eyz-Sf-1e7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRa-KH-Gfw">
+                                <rect key="frame" x="46" y="699" width="327" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91077093909999995" green="0.8941375855" blue="0.75857589349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Thrift Flip Tutorials">
+                                    <color key="titleColor" red="0.1099237278" green="0.4209705889" blue="0.18818074460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.26655906439999999" green="0.1063604131" blue="0.062722034750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="UCt-af-mPt"/>
@@ -845,10 +855,10 @@ they are worn out, and again we have tons
         <segue reference="Pwf-mE-JY1"/>
         <segue reference="eyQ-uB-Svh"/>
         <segue reference="eyz-Sf-1e7"/>
-        <segue reference="cv5-xo-2uE"/>
-        <segue reference="6Xx-ve-QhG"/>
-        <segue reference="rpw-Sx-vdj"/>
-        <segue reference="ONk-JX-qdB"/>
+        <segue reference="MLh-2Q-l6b"/>
+        <segue reference="yKF-Uu-KWH"/>
+        <segue reference="ytI-SZ-k6x"/>
+        <segue reference="YbS-Vw-MLs"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="More Clothes" width="168" height="299"/>
