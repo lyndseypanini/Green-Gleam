@@ -16,9 +16,19 @@ class FoodChoicesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func profileTapped(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func fashionTapped(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func challengeTapped(_ sender: UIBarButtonItem) {
+    }
+    
+    @IBAction func searchTapped(_ sender: UIBarButtonItem) {
+    }
     /*
-    // MARK: - Navigation
+     @IBAction func homeTapped(_ sender: UIBarButtonItem) {
+     }
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

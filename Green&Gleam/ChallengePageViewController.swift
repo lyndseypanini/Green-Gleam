@@ -16,7 +16,16 @@ class ChallengePageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func profileTapped(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func fashionTapped(_ sender: UIBarButtonItem) {
+    }
+    
+    @IBAction func homeTapped(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func searchTapped(_ sender: UIBarButtonItem) {
+    }
+    
     /*
     // MARK: - Navigation
 

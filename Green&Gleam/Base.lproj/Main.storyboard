@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CwA-qM-XJc">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CwA-qM-XJc">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -59,20 +59,6 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3N-8p-udK">
-                                <rect key="frame" x="33" y="524" width="349" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.72801727059999999" green="0.75585609669999998" blue="0.58428549770000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="27"/>
-                                <state key="normal" title="carbon footprint calculator">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="calculatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nfN-5m-jiA"/>
-                                    <action selector="carbonFootprintCalcButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kYl-EJ-KA5"/>
-                                    <segue destination="STI-AN-2l9" kind="show" id="jbB-2r-j6I"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Vegan Cookies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDt-WV-DrG">
                                 <rect key="frame" x="23" y="289" width="155" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -112,6 +98,20 @@
                                     <segue destination="jA0-oZ-fS8" kind="show" id="AiZ-vZ-wAa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3N-8p-udK">
+                                <rect key="frame" x="40" y="480" width="302" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72801727059999999" green="0.75585609669999998" blue="0.58428549770000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="19"/>
+                                <state key="normal" title="carbon footprint calculator">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nfN-5m-jiA"/>
+                                    <action selector="carbonFootprintCalcButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kYl-EJ-KA5"/>
+                                    <segue destination="STI-AN-2l9" kind="show" id="jbB-2r-j6I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -124,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230.4347826086957" y="116.51785714285714"/>
+            <point key="canvasLocation" x="1230.4347826086957" y="115.7608695652174"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="NJF-fo-xLR">
@@ -186,15 +186,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.460492228" green="0.26230569949999999" blue="0.26230569949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1316 ✨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDi-8y-y2r">
-                                <rect key="frame" x="119" y="550.5" width="172" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="49"/>
-                                <color key="textColor" red="0.97263079880000003" green="0.83690255879999997" blue="0.45873147250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-07-16 at 10.58.29 AM" translatesAutoresizingMaskIntoConstraints="NO" id="1ex-jr-X8G">
-                                <rect key="frame" x="83" y="371.5" width="245" height="171"/>
+                                <rect key="frame" x="78" y="299" width="245" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHJ-Ns-bYe">
@@ -239,8 +232,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="progressTintColor" red="0.72801727059999999" green="0.75585609669999998" blue="0.58428549770000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1316 ✨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDi-8y-y2r">
+                                <rect key="frame" x="114" y="478" width="172" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="49"/>
+                                <color key="textColor" red="0.97263079880000003" green="0.83690255879999997" blue="0.45873147250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
                         <viewLayoutGuide key="safeArea" id="c1f-JZ-EUf"/>
                     </view>
                     <navigationItem key="navigationItem" id="QzO-VJ-zhf"/>
@@ -634,10 +635,30 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Item" image="star.fill" catalog="system" id="Zhk-oR-k7p"/>
-                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="Ht3-th-6lH"/>
-                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="hDz-Ib-1nG"/>
-                                    <barButtonItem title="👚" width="137" id="PMj-a9-891"/>
-                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="gnK-NW-qPq"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="Ht3-th-6lH">
+                                        <connections>
+                                            <action selector="searchTapped:" destination="jA0-oZ-fS8" id="4VH-mE-iZe"/>
+                                            <segue destination="Qr6-Td-8J5" kind="show" id="B7p-g0-0qt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="hDz-Ib-1nG">
+                                        <connections>
+                                            <action selector="homeTapped:" destination="jA0-oZ-fS8" id="HGq-3p-gMu"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="4Og-zO-OmL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="👚" width="137" id="PMj-a9-891">
+                                        <connections>
+                                            <action selector="fashionTapped:" destination="jA0-oZ-fS8" id="5fj-hk-0r9"/>
+                                            <segue destination="E4b-uJ-enB" kind="show" id="23B-c0-0tm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="gnK-NW-qPq">
+                                        <connections>
+                                            <action selector="profileTapped:" destination="jA0-oZ-fS8" id="mpe-86-jvw"/>
+                                            <segue destination="jl9-rK-vQW" kind="show" id="cLd-La-txJ"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
@@ -688,7 +709,7 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqV-Qb-e2g">
-                                <rect key="frame" x="20" y="118" width="158" height="147"/>
+                                <rect key="frame" x="20" y="143" width="141" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="clothing"/>
                                 <connections>
@@ -697,7 +718,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNT-fQ-e8W">
-                                <rect key="frame" x="316" y="118" width="78" height="140"/>
+                                <rect key="frame" x="290" y="143" width="78" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="More Clothes"/>
                                 <connections>
@@ -705,7 +726,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgs-35-dwZ">
-                                <rect key="frame" x="20" y="322" width="298" height="170"/>
+                                <rect key="frame" x="31" y="301" width="212" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="healthy food"/>
                                 <connections>
@@ -713,7 +734,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sK1-Yt-bDg">
-                                <rect key="frame" x="176" y="118" width="141" height="143"/>
+                                <rect key="frame" x="157" y="143" width="133" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="clothessss"/>
                                 <connections>
@@ -721,7 +742,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAv-fk-pFF">
-                                <rect key="frame" x="245" y="321" width="149" height="170"/>
+                                <rect key="frame" x="240" y="301" width="148" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="cookies"/>
                                 <connections>
@@ -729,7 +750,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuW-PT-8mz">
-                                <rect key="frame" x="20" y="544" width="223" height="174"/>
+                                <rect key="frame" x="24" y="474" width="106" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="green"/>
                                 <connections>
@@ -737,34 +758,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5m-nT-bj3">
-                                <rect key="frame" x="217" y="544" width="177" height="174"/>
+                                <rect key="frame" x="131" y="473" width="91" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="leaf"/>
                                 <connections>
                                     <segue destination="jA0-oZ-fS8" kind="show" id="lsD-tu-Nkg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="click here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqf-Xj-DF3">
-                                <rect key="frame" x="20" y="265" width="115" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="click here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djv-gO-sf4">
-                                <rect key="frame" x="20" y="495" width="115" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="click here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOW-kF-RQm">
-                                <rect key="frame" x="20" y="726" width="115" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="↑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grQ-BZ-t8u">
                                 <rect key="frame" x="148" y="270" width="13" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -773,21 +773,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="↑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhF-Ze-kXl">
-                                <rect key="frame" x="143" y="500" width="13" height="21"/>
+                                <rect key="frame" x="131" y="445" width="13" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="↑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioh-Qf-lXH">
-                                <rect key="frame" x="143" y="726" width="13" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="click here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djv-gO-sf4">
+                                <rect key="frame" x="33" y="444" width="96" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="click here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eig-CL-96Y">
+                                <rect key="frame" x="235" y="502" width="96" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="click here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71E-nM-Ysg">
+                                <rect key="frame" x="29" y="270" width="96" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" fixedFrame="YES" text="" placeholder="Search" showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bul-gW-dUG">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="66" width="414" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="yes"/>
                                 <scopeButtonTitles>
@@ -805,7 +819,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KG1-aS-XtP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="960"/>
+            <point key="canvasLocation" x="1228.985507246377" y="959.51086956521749"/>
         </scene>
         <!--Search Clothing View Controller-->
         <scene sceneID="DMj-u8-AiV">
@@ -901,11 +915,36 @@ mon, wed, fri</string>
                                 <rect key="frame" x="-9" y="764" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="wtA-CQ-tMR"/>
-                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="lAO-wb-kTh"/>
-                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="Lks-qs-3U3"/>
-                                    <barButtonItem title="👚" width="137" id="F7u-tu-AVq"/>
-                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="nGT-7I-gVh"/>
+                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="wtA-CQ-tMR">
+                                        <connections>
+                                            <action selector="challengeTapped:" destination="dn5-vR-FS8" id="1tD-29-Sjd"/>
+                                            <segue destination="jA0-oZ-fS8" kind="show" id="CeT-YV-riR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="lAO-wb-kTh">
+                                        <connections>
+                                            <action selector="searchTapped:" destination="dn5-vR-FS8" id="Yii-iG-N8U"/>
+                                            <segue destination="Qr6-Td-8J5" kind="show" id="kV1-4b-oBA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="Lks-qs-3U3">
+                                        <connections>
+                                            <action selector="homeTapped:" destination="dn5-vR-FS8" id="J2T-38-wYW"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="7Jl-26-HHs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="👚" width="137" id="F7u-tu-AVq">
+                                        <connections>
+                                            <action selector="fashionTapped:" destination="dn5-vR-FS8" id="NJa-pD-JbE"/>
+                                            <segue destination="E4b-uJ-enB" kind="show" id="K1M-U7-QUG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="nGT-7I-gVh">
+                                        <connections>
+                                            <action selector="profileTapped:" destination="dn5-vR-FS8" id="uXF-GU-Iha"/>
+                                            <segue destination="jl9-rK-vQW" kind="show" id="d7U-yS-bN3"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
@@ -942,17 +981,34 @@ mon, wed, fri</string>
                                 <rect key="frame" x="0.0" y="753" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="M9e-zs-aii"/>
-                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="vS8-CV-cMK"/>
-                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="sTa-ph-37I">
+                                    <barButtonItem title="Item" image="star.fill" catalog="system" id="M9e-zs-aii">
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="U8l-La-LpA"/>
+                                            <action selector="challengeTapped:" destination="S5d-WA-Joa" id="KzL-Pk-C22"/>
+                                            <segue destination="jA0-oZ-fS8" kind="show" id="Y6C-Su-ahs"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="👚" width="137" id="XmL-oH-xlN"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="vS8-CV-cMK">
+                                        <connections>
+                                            <action selector="searchTapped:" destination="S5d-WA-Joa" id="7Iw-MY-Q5c"/>
+                                            <segue destination="Qr6-Td-8J5" kind="show" id="VPu-GV-Zkl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="sTa-ph-37I">
+                                        <connections>
+                                            <action selector="homeTapped:" destination="S5d-WA-Joa" id="31n-rb-A5J"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="YCx-2I-Hbb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="👚" width="137" id="XmL-oH-xlN">
+                                        <connections>
+                                            <action selector="fashionTapped:" destination="S5d-WA-Joa" id="GEQ-hr-7wT"/>
+                                            <segue destination="E4b-uJ-enB" kind="show" id="hMA-Id-Cc1"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="DnZ-BE-MIH">
                                         <connections>
-                                            <action selector="profileTapped:" destination="BYZ-38-t0r" id="N2Y-6q-Ybk"/>
+                                            <action selector="profileTapped:" destination="S5d-WA-Joa" id="K5s-n3-SvB"/>
+                                            <segue destination="jl9-rK-vQW" kind="show" id="szH-9Q-1bh"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -1077,10 +1133,10 @@ mon, wed, fri</string>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Fashion View Controller-->
         <scene sceneID="qad-9r-hpI">
             <objects>
-                <viewController id="E4b-uJ-enB" sceneMemberID="viewController">
+                <viewController id="E4b-uJ-enB" customClass="FashionViewController" customModule="Green_Gleam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9qF-rK-oIa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1111,23 +1167,27 @@ street stores at breakneck speed."</string>
                                 <items>
                                     <barButtonItem title="Item" image="star.fill" catalog="system" id="W4Z-w4-rtC">
                                         <connections>
+                                            <action selector="challengeTapped:" destination="E4b-uJ-enB" id="aUj-ba-Cm8"/>
                                             <segue destination="jA0-oZ-fS8" kind="show" id="yKF-Uu-KWH"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Item" image="magnifyingglass" catalog="system" width="128.5" id="eEO-P9-OhO">
                                         <connections>
-                                            <segue destination="Qr6-Td-8J5" kind="show" id="MLh-2Q-l6b"/>
+                                            <action selector="searchTapped:" destination="E4b-uJ-enB" id="mho-fz-aMf"/>
+                                            <segue destination="Qr6-Td-8J5" kind="show" id="llA-aP-8aC"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Item" image="globe" catalog="system" width="148.5" id="ahI-Gb-DCz">
                                         <connections>
+                                            <action selector="homeTapped:" destination="E4b-uJ-enB" id="hbk-8g-1ip"/>
                                             <segue destination="BYZ-38-t0r" kind="show" id="YbS-Vw-MLs"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="👚" width="137" id="coh-Ll-6yi"/>
                                     <barButtonItem title="Item" image="person.fill" catalog="system" width="361" id="6lk-bY-OCq">
                                         <connections>
-                                            <segue destination="jl9-rK-vQW" kind="show" id="ytI-SZ-k6x"/>
+                                            <action selector="profileTapped:" destination="E4b-uJ-enB" id="4Rj-kW-kXW"/>
+                                            <segue destination="jl9-rK-vQW" kind="show" id="5nK-vu-q4e"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -1246,13 +1306,13 @@ they are worn out, and again we have tons
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Pwf-mE-JY1"/>
+        <segue reference="XwE-O4-0m3"/>
         <segue reference="eyQ-uB-Svh"/>
         <segue reference="upP-21-vlZ"/>
-        <segue reference="cv5-xo-2uE"/>
-        <segue reference="3NG-Cs-Mnc"/>
-        <segue reference="rpw-Sx-vdj"/>
-        <segue reference="U8l-La-LpA"/>
+        <segue reference="CQs-Ur-k9y"/>
+        <segue reference="eAV-ly-jb9"/>
+        <segue reference="vJ0-un-e8z"/>
+        <segue reference="pbE-gq-9Ip"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="More Clothes" width="168" height="299"/>

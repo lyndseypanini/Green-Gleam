@@ -17,6 +17,14 @@ class FashionViewController: UIViewController {
     }
     
 
+    @IBAction func profileTapped(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func homeTapped(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func searchTapped(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func challengeTapped(_ sender: UIBarButtonItem) {
+    }
     /*
     // MARK: - Navigation
 
